@@ -1,0 +1,669 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap');
+
+* {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(9, 209, 9);
+    /* border-radius: 10px; */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: green;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.my-img {
+    width: 100%;
+    height: 100vh;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Playwrite MX", cursive;
+    font-size: 60px;
+}
+
+.centered-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.my-button {
+    position: absolute;
+    top:60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(9, 209, 9);
+    color: white;
+    border: none;
+    width: 10%;
+    height: 5%;
+}
+
+.food-txt {
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.food-txt p {
+    font-size: 25px;
+    font-family: "Playwrite MX", cursive;
+}
+
+.food-sec {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.food-sec div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.food-sec img {
+    width: 50%;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.food-sec button {
+    background-color: rgb(9, 209, 9);
+    color: white;
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.food-card-1 {
+    width: 100%;
+    background-color: rgb(217, 235, 213);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+}
+
+.food-card-1 img {
+    border-radius: 50%;
+    height: 400px;
+    width: 100%;
+}
+
+.food-card-1 button {
+    background-color: rgb(9, 209, 9);
+    color: white;
+    border: none;
+    height: 10%;
+    width: 40%;
+    margin-left: 25%;
+}
+
+.food-card-2 {
+    width: 100%;
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    order: -1;
+}
+
+.food-card-2 img {
+    border-radius: 50%;
+    height: 400px;
+    width: 100%;
+}
+
+.food-card-2 button {
+    background-color: rgb(9, 209, 9);
+    color: white;
+    border: none;
+    height: 10%;
+    width: 40%;
+    margin-left: 25%;
+}
+
+.img-card {
+    position: relative;
+}
+
+.img-card img {
+    width: 100%;
+    height: 70vh;
+}
+
+.impact-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.impact-text p {
+    font-size: 25px;
+    font-family: "Playwrite MX", cursive;
+}
+
+.impact-page {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.imp {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fa  {
+    color: rgb(9, 209, 9);
+    font-size: 30px;
+    padding: 20px;
+}
+
+.poke-text {
+    width: 100%;
+    background-color: rgb(217, 235, 213);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.poke-text p {
+    font-size: 25px;
+    font-family: "Playwrite MX", cursive;
+}
+
+.poke-page {
+    width: 100%;
+    background-color: rgb(217, 235, 213);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.poke {
+    /* padding: 20px; */
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.poke img {
+    height: 30vh;
+    width: 30vh;
+    border-radius: 50%;
+    padding-bottom: 20px;
+}
+
+.gallery {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-right: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.contact-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.gallery-image img {
+    height: 40vh;
+    width: 100%;
+}
+
+.contact-page {
+    padding-left: 200px;
+    padding-right: 200px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.contact-page img {
+    padding: 40px;
+    height: 50%;
+    width: 70%;
+    border-radius: 50%;
+}
+
+.contact-form {
+    padding-top: 50px;
+}
+
+.email {
+    border: none;
+    background-color: aliceblue;
+    height: 30px;
+    width: 300px;
+    padding: 10px;
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+.email-button {
+    background-color: rgb(9, 209, 9);
+    color: white;
+    border: none;
+    height: 30px;
+    width: 100px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 0px) and (max-width: 320px) {
+    .centered {
+        top: 37%;
+        font-size: 34px;
+    }
+    .centered-1 {
+        top: 51%;
+        left: 50%;
+        font-size: 20px;
+    }
+    .my-button {
+        top: 60%;
+        left: 50%;
+        width: 30%;
+    }
+    .food-sec {
+        padding: 50px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    .food-sec img {
+        height: 90px;
+    }
+    .food-card-1 {
+        padding-left: 30px;
+        padding-right: 30px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .food-card-1 img {
+        height: 250px;
+    }
+    .food-card-1 button {
+        width: 70%;
+        margin-left: 15%;
+    }
+    .food-card-2 {
+        padding-left: 30px;
+        padding-right: 30px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .food-card-2 img {
+        height: 250px;
+    }
+    .food-card-2 button {
+        width: 70%;
+        margin-left: 15%;
+    }
+    .impact-page {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .poke-page {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact-page {
+        padding-left: 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact-image-card {
+        padding: 10px;
+    }
+    .contact-form {
+        padding: 10px;   
+    }
+    .contact-page img {
+        height: 60%;
+        margin-left: 36px;
+    }
+    .email {
+        margin-bottom: 15px;
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 500px) {
+    .centered {
+        font-size: 30px;
+    }
+    .centered-1 {
+        top: 50%;
+        font-size: 20px;
+    }
+    .my-button {
+        top: 60%;
+        width: 30%;
+    }
+    .food-sec img {
+        height: 70px;
+    }
+    .poke-page {
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .food-card-1 {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .food-card-1 button {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .food-card-1 img {
+        height: 300px;
+    }
+    .food-card-2 {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .food-card-2 button {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .food-card-2 img {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 767px) {
+    .centered {
+        font-size: 35px;
+    }
+    .centered-1 {
+        top: 50%;
+        font-size: 25px;
+    }
+    .my-button {
+        top: 60%;
+        width: 25%;
+    }
+    .food-sec {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .food-sec img {
+        height: 100px;
+    }
+    .food-card-1 {
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .food-card-1 button {
+        width: 60%;
+        margin-left: 20%;
+    }
+    .food-card-1 img {
+        height: 340px;
+    }
+    .food-card-2 {
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .food-card-2 button {
+        width: 60%;
+        margin-left: 20%;
+    }
+    .food-card-2 img {
+        height: 340px;
+    }
+    .impact-page {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .poke-page {
+        padding-left: 5px;
+        padding-right: 5px;
+        gap: 20px;
+    }
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact-page {
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .contact-page img {
+        height: 65%;
+    }
+    .email {
+        margin-bottom: 15px;
+        width: 260px;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+    .centered {
+        font-size: 45px;
+    }
+    .centered-1 {
+        top: 53%;
+        font-size: 35px;
+    }
+    .my-button {
+        top: 65%;
+        width: 22%;
+    }
+    .food-sec img {
+        height: 80px;
+    }
+    .food-card-1 {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .food-card-1 p {
+        font-size: 13px;
+    }
+    .food-card-1 img {
+        height: 340px;
+    }
+    .food-card-1 button {
+        width: 55%;
+        margin-left: 20%;
+    }
+    .food-card-2 {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .food-card-2 p {
+        font-size: 13px;
+    }
+    .food-card-2 img {
+        height: 340px;
+    }
+    .food-card-2 button {
+        width: 55%;
+        margin-left: 20%;
+    }
+    .poke-page {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .contact-page {
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    .contact-page img {
+        height: 40%;
+    }
+    .email {
+        width: 209px;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1024px) {
+    .centered {
+        font-size: 50px;
+    }
+    .centered-1 {
+        top: 56%;
+        font-size: 44px;
+    }
+    .my-button {
+        top: 70%;
+    }
+    .food-sec img {
+        height: 80px;
+    }
+    .food-card-1 p {
+        font-size: 12px;
+    }
+    .food-card-1 img {
+        height: 300px;
+    }
+    .food-card-1 button {
+        width: 70%;
+        margin-left: 15%;
+    }
+    .food-card-2 p {
+        font-size: 12px;
+    }
+    .food-card-2 img {
+        height: 300px;
+    }
+    .food-card-2 button {
+        width: 70%;
+        margin-left: 15%;
+    }
+    .poke-page {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .contact-page img {
+        padding: 30px;
+        height: 40%;
+        width: 112%;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1365px) {
+    .centered {
+        font-size: 55px;
+    }
+    .centered-1 {
+        font-size: 45px;
+        top: 55%;
+    }
+    .my-button {
+        top: 70%;
+    }
+    .food-sec img {
+        height: 100px;
+    }
+    .food-card-1 p {
+        font-size: 14px;
+    }
+    .food-card-1 img {
+        height: 340px;
+    }
+    .food-card-1 button {
+        width: 55%;
+        margin-left: 20%;
+    }
+    .food-card-2 p {
+        font-size: 14px;
+    }
+    .food-card-2 img {
+        height: 340px;
+    }
+    .food-card-2 button {
+        width: 55%;
+        margin-left: 20%;
+    }
+    .contact-page img {
+        height: 45%;
+        width: 80%;
+    }
+    .email {
+        width: 223px;
+    }
+}
